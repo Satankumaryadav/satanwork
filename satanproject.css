@@ -1,0 +1,411 @@
+*
+{
+	margin: 0px;
+
+}
+body{
+	background-color: black;
+}
+
+/* container css  */
+.container{
+    display: flex;
+    background-color: whitesmoke;
+    width: 1150px;
+    height: 730px;
+    margin-left: 22vh;
+	
+}
+
+
+
+ /* nabar css */
+.navbar
+{
+    margin-left: 1vh;
+    width:33vh;
+	height: 87vh;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+/* navbar cart button css */
+
+.navbar .btn{
+	background-color: rgba(255, 0, 0, 0.911);
+	color: white;
+    width:130px;
+	font-size: 20px;
+    height: 50px;
+	border-radius: 50px;
+    padding-left: 16px;
+	margin-left: 5vh;
+	margin-top: 5vh;
+	border: 2px solid rgba(255, 0, 0, 0.911)
+	
+
+
+}
+
+
+/* navbar anchore tag css */
+.navbar a
+{
+	color: darkGray;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 14px 28px;
+    margin-top: 3vh;
+}
+
+
+
+/* navbar anhore tag h2 css */
+.navbar a h2{
+	font-family:'Times New Roman', Times, serif;
+	color: black;
+	font-size:30px ;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/* cart css hidden for desktop */
+#cart{
+	opacity: 0;
+	visibility: hidden;
+}
+/* .navbar a:hover
+{
+	background-color: white;
+	color: black;
+} */
+
+
+
+ /* row1 css is the first row in content  */
+
+.row1{
+	display: flex;
+	padding-top: 50px;
+
+}
+
+
+ /* row1 h2 tag css */
+.row1 h2{
+
+	  font-size:60px;
+	  padding-left: 1vh;
+	  padding-top: 10vh;
+	  
+	  
+	  
+}
+
+
+/* row1 col paragraph css */
+.col p
+{
+	text-align: justify;
+	padding-top: 10vh;
+	padding-bottom: 10px;
+	color:darkGray;
+	padding-left: 10vh;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+
+
+
+
+
+
+ /* paragraph for mobile device which is hidden in desktop */
+#mob{
+	
+	opacity: 0;
+	visibility:hidden;
+	margin-top: 10px;
+	
+}
+
+.col #hr{
+	opacity: 1;
+	visibility:visible;
+	position: relative;
+	left:10vh;
+	width: 15vh;
+    border-top:3px solid red;
+	
+
+}
+
+/* horizontal line below the paragraph */
+#hr1{
+	opacity: 0;
+	visibility:hidden;
+}
+
+/* row2 css in content */
+
+.row2{
+	margin-top: 5px;
+	}
+
+
+/* row2 photo section css */
+
+.photo{
+	float: left;
+    width:170px;
+    height: 200px;
+    background-color:white;
+    margin-left:10px;
+    margin-top:10px;
+    border-radius: 20px;
+}
+ 
+
+/* photo image css */
+   .photo img{
+	border-radius: 120px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 23px;
+    margin-top: 20px;
+}
+
+/* paragraph below the img section css */
+.photo p{
+    margin-top:px;
+    margin-left:23px;
+    font-family: sans-serif;
+}
+
+
+ /* toggle creation css */
+#toggle
+{
+	display: none;
+}
+.togglearea
+{
+	background-color: whitesmoke;
+	border-bottom: 2px solid white;
+	color: white;
+	padding: 5px;
+	display: flex;
+	justify-content: flex-start;
+}
+.togglearea label
+{
+	background-color: white;
+	height: 45px;
+	width: 50px;
+	color: black;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    
+}
+
+.togglearea label span
+{
+	background-color:red;
+	height:4px;
+	width: 70%;
+	margin: 2px 0px;
+}
+.togglearea
+{
+	display:none;
+}
+
+/* headmob logo for mobile hidden in desktop */
+
+#headmob{
+	opacity: 0;
+	visibility: hidden;
+}
+
+@media screen and (max-width:600px)
+{    
+    
+	.navbar
+	{
+		flex-direction: column;
+		display:none;
+		padding: 14px 80px;
+	}
+
+
+
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea
+	{	
+		display: flex;
+	}
+
+
+
+	/* cart css in mobile */
+	#cart{
+		opacity: 1;
+		visibility: visible;
+		color:red;
+		
+		position: relative;
+		left:20vh;
+		padding-top: 1vh;
+		font-size: 25px;
+
+	}
+
+	/* mobile head logo css */
+	#headmob{
+         
+		opacity: 1;
+	    visibility: visible;
+		color:black;
+		font-size:24px;
+		position: relative;
+		left:10vh;
+	}
+	
+
+	/* container for the mobile */
+	.container{
+        width:100%;
+        margin: 0;
+        height:200vh;
+		display: flex;
+		flex-direction: column;
+    }
+
+
+	.navbar a h2{
+		opacity: 0;
+		visibility:hidden;
+	}
+
+
+	/* row1 h2 for mobile */
+    .row1 h2{
+	width: 200px;
+    font-size: 24px;
+    position: relative;
+    padding-left: 20px;
+    top: -8vh;
+	}
+
+
+	.row2{
+		/* display: ; */
+	}
+	#im{
+		opacity: 0;
+		visibility: hidden;
+	}
+	.row2{
+		
+	}
+	.photo{
+		float: left;
+		width:160px;
+		height:180px;
+		background-color:white;
+		margin-left:13px;
+		border-radius: 20px;
+	}
+
+
+	.photo img{
+		border-radius: 110px;
+		width: 110px;
+		height: 110px;
+		position: relative;
+		left: 23px;
+		margin-top: 20px;
+	}
+
+
+	/* photo size for css in mobile */
+
+	.photo p{
+		font-size: 15px;
+		margin-top:10px;
+
+		padding-left:10px;
+		font-family: sans-serif;
+	}
+
+
+	/* paragraph column for desktop hidden  */
+.col p
+{
+
+	display: none;
+	padding-left:0vh;
+
+}
+
+
+/* content height  css */
+.content{
+	height: 90vh;
+}
+
+
+
+/* paragraph for mobile device */
+
+#mob{
+	
+	opacity: 1;
+	visibility:visible;
+	padding-top:5px;
+	position:absolute;
+	left:15px;
+	padding-top: 50vh;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* horizontalline hidden */
+.col #hr{
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
+	left:0vh;
+	width: 5vh;
+	
+
+}
+
+/* :horizontal line visible */
+#hr1{
+	opacity: 1;
+	visibility:visible;
+	position: relative;
+	right: 157px;
+    border-top: 3px solid red;
+    top: 140px;
+	
+}
+
+	
+}
+
