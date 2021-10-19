@@ -19,7 +19,7 @@
             <span></span>
             </label>
             <h2 id="headmob"><b>Lorem</b></h2>
-            <i class="fas fa-shopping-cart" id="cart"></i>
+            <i class="fas fa-shopping-cart" id="cart" >:0</i>
     </div>
 
 <input type="checkbox" id="toggle">
@@ -32,9 +32,11 @@
                 <a href="#">Service</a>
                 <a href="#">Gallery</a>
                 <a href="#">Book</a>
-                <button class="btn"> Cart</button>
-                
+                <button class="btn" id="clickme">Cart:0</button>
+
+            
           </div>
+
          
            <!-- content blok -->
     
@@ -70,7 +72,7 @@
                      <p><b>Chiken Burger</b></p>
 
                 </div>
-                <div class="photo">
+                <div class="photo" >
                     <img src="img/loaded-nacho.jfif" alt="pizaa picture" >
                      <p><b>Loaded Nachos</b></p>
                 </div>
@@ -95,5 +97,45 @@
             
 
     </div>
+
+    <script>
+        var btt= document.getElementById("clickme");
+          count=0;
+        btt.onclick = function(){
+            count +=1;
+            btt.innerHTML="Cart : " +count;
+            if(count>=10){
+                btt.onclick=function(){
+                    count--;
+                    btt.innerHTML="Cart : " +count;
+                }
+            }
+            
+
+        }; 
+
+        
+
+   </script>
+
+        <script>
+            var btt2= document.getElementById("cart");
+            count=0;
+            btt2.onclick = function (){
+                count +=1;
+                btt2.innerHTML=" : " +count;
+                if(count>=10){
+                    btt2.onclick=function sub(){
+                        count--;
+                        btt2.innerHTML=" : " +count;
+                    
+
+                    }
+                    
+                }
+                 
+
+            }; 
+      </script>
 </body>
 </html>
